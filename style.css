@@ -1,10 +1,19 @@
 .header {
     display: flex;
-    background-color: rgb(50, 167, 145)
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(50, 167, 145);
+    height: 60px;
+}
+
+.trybewarts-header-logo {
+    height: 40px;
 }
 
 .trybewarts-login {
     display: flex;
+    justify-content: flex-end;
+    
 }
 
 main {
@@ -38,10 +47,45 @@ main {
     width: 34%;
 }
 
+
 .input-form {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     margin: 5px;
-    align-self: stretch;
+    
+}
+
+.input-form2 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 5px;
+    
+}
+
+.container-radio-checkbox{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.classe-radio {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+}
+
+.classe-check-box {
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+}
+
+.classe-avaliacao {
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: x-small;
+    flex-shrink:3;
 }
