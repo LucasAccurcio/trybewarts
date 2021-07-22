@@ -2,14 +2,14 @@ const getButton = document.getElementById('enter-button');
 
 function buttonAlert(event) {
   event.preventDefault();
-  let loginPadrao = 'tryber@teste.com';
-  let senhaPadrao = '123456';
-  let getLogin = document.getElementById('input-login').value;
-  let getSenha = document.getElementById('input-senha').value;
-    
-  if ( getLogin !== loginPadrao || getSenha !== senhaPadrao) {
+  const loginPadrao = 'tryber@teste.com';
+  const senhaPadrao = '123456';
+  const getLogin = document.getElementById('input-login').value;
+  const getSenha = document.getElementById('input-senha').value;
+
+  if (getLogin !== loginPadrao || getSenha !== senhaPadrao) {
     alert('Login ou senha inválidos.');
-  } else if (getLogin === loginPadrao && getSenha === senhaPadrao){
+  } else if (getLogin === loginPadrao && getSenha === senhaPadrao) {
     alert('Olá, Tryber!');
   }
 }
@@ -22,8 +22,8 @@ function stateHandle(event) {
   event.preventDefault();
   if (getCheckbox.value === '') {
     btnSubmit.disabled = true;
-    getCheckbox.value = true; 
-        
+    getCheckbox.value = true;
+
   } else {
     btnSubmit.disabled = false;
     getCheckbox.value = '';
@@ -31,5 +31,3 @@ function stateHandle(event) {
   console.log(getCheckbox.value);
 }
 getCheckbox.addEventListener('change', stateHandle);
-
-
