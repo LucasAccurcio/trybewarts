@@ -86,8 +86,8 @@ main {
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(105, 105, 105);
-    color: white;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(105, 105, 105);
+  color: white;
 }
