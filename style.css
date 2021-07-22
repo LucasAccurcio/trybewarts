@@ -1,91 +1,86 @@
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: rgb(50, 167, 145);
-    height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(50, 167, 145);
+  height: 60px;
 }
 
 .trybewarts-header-logo {
-    height: 40px;
+  height: 40px;
 }
 
 .trybewarts-login {
-    display: flex;
-    justify-content: flex-end;
-    
+  display: flex;
+  justify-content: flex-end;
 }
 
 main {
-    display: flex;
+  display: flex;
 }
 
 #evaluation-form {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    width: 675px;
+  display: flex;
+  flex-flow: nowrap;
+  flex-direction: column;
+  width: 675px;
 }
 #trybewarts-forms-logo {
-    height: 500px;
+  height: 500px;
 }
 
 #input-name {
-    width: 40%; 
+  width: 40%; 
 }
 
 #input-lastname {
-    width: 40%;
-    
+  width: 40%;
 }
 
 #input-email {
-    width: 40%;
+  width: 40%;
 }
 
 #house {
-    width: 34%;
+  width: 34%;
 }
 
-
 .input-form {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 5px;
-    
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 5px;
 }
 
 .input-form2 {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    margin: 5px;
-    
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 5px;
 }
 
-.container-radio-checkbox{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    margin-top: 20px;
+.container-radio-checkbox {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .classe-radio {
-    display: flex;
-    flex-flow: column wrap;
-    width: 40%;
+  display: flex;
+  flex-flow: column wrap;
+  width: 40%;
 }
 
 .classe-check-box {
-    display: flex;
-    flex-flow: row wrap;
-    width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  width: 50%;
 }
 
 .classe-avaliacao {
-    display: flex;
-    flex-wrap: nowrap;
-    font-size: x-small;
-    flex-shrink:3;
+  display: flex;
+  flex-wrap: nowrap;
+  font-size: x-small;
+
 }

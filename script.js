@@ -2,9 +2,7 @@ let getButton = document.getElementById('enter-button');
 let getLogin = document.getElementById('input-login').value;
 let getSenha = document.getElementById('input-senha').value;
 
-let btnSubmit = document.getElementById('submit-btn');
-let getCheckbox = document.getElementById('agreement');
-btnSubmit.disabled = true;
+
 
 function buttonAlert(event) {
     event.preventDefault();
@@ -22,14 +20,21 @@ function buttonAlert(event) {
 getButton.addEventListener('click', buttonAlert);
 
 
+let btnSubmit = document.getElementById('submit-btn');
+let getCheckbox = document.getElementById('agreement');
+btnSubmit.disabled = true;
 function stateHandle(event) {
-        event.preventDefault();
-        console.log(event.value);
-        if (getCheckbox.value === "") {
-         btnSubmit.disabled = true; 
-         } else {
+    event.preventDefault();
+    if (getCheckbox.value === "") {
+        btnSubmit.disabled = true;
+        getCheckbox.value = true 
+        
+    } else {
         btnSubmit.disabled = false;
+        getCheckbox.value = "";
     }
-     getCheckbox.addEventListener("click", stateHandle);
+    console.log(getCheckbox.value);
 }
+getCheckbox.addEventListener("change", stateHandle);
+
 
