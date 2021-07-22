@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trybewarts</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
         </form>
     </header>
     <main>
-        <form id="evaluation-form">
+        <form id="evaluation-form" method="GET">
             <div class="input-form">
                 <input type="text" name="" placeholder="Nome" id="input-name">
                 <input type="text" name="" placeholder="Sobrenome" id="input-lastname">
@@ -64,7 +64,8 @@
                 <label for="10"><input type="radio" name="rate" value="10" id="10">10</label>
             </div>
             <label for="" class="textarea">Deixe seu comentário:</label>
-            <textarea maxlength="500"></textarea>
+            <textarea maxlength="500" id="textarea"></textarea>
+            <p id="counter"></p>
             <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?<input type="checkbox" id="agreement" ></label>
             <button type="submit" id="submit-btn" >Enviar</button>
         </form>
