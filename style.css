@@ -84,3 +84,10 @@ main {
   flex-wrap: nowrap;
   font-size: x-small;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: dimgray;
+  color: white;
+}
