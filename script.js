@@ -23,7 +23,6 @@ function stateHandle(event) {
   if (getCheckbox.value === '') {
     btnSubmit.disabled = true;
     getCheckbox.value = true;
-
   } else {
     btnSubmit.disabled = false;
     getCheckbox.value = '';
