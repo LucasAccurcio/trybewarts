@@ -40,10 +40,10 @@ function countTextarea() {
 countTextarea();
 getTextarea.addEventListener('keyup', countTextarea);
 
-// Seleciona a tag <form> que será substituída por uma <div> com os valores inseridos no formulário
+// Seleciona a tag <form> que será substituída pelos valores inseridos no formulário
 // Recupera os valores preenchido no formulário
-// Cria uma nova string adicionando os todos os valores recuperados e insere na nova <div> criada
-function createDiv() {
+// Cria uma nova string adicionando os todos os valores recuperados e insere na tag <form>
+function restoreData() {
   const tagForm = document.querySelector('#evaluation-form');
   const inputName = document.getElementById('input-name').value;
   const inputLastname = document.getElementById('input-lastname').value;
@@ -58,9 +58,16 @@ function createDiv() {
   const rating = document.querySelector('input[name="rate"]:checked').value;
   const note = document.getElementById('textarea').value;
   tagForm.innerHTML = document.createElement('div');
-  tagForm.innerHTML = `Nome: ${inputName} ${inputLastname} <br>
-  Email: ${inputEmail} <br>Casa: ${inputHouse} <br>
-  Família: ${inputFamily} <br>Matérias:${conteudos} <br>
+  tagForm.innerHTML = `Nome: ${inputName} ${inputLastname} <br>Email: ${inputEmail} <br>
+  Casa: ${inputHouse} <br>Família: ${inputFamily} <br>Matérias:${conteudos} <br>
   Avaliação: ${rating} <br>Observações: ${note}`;
+  tagForm.classList.add('novo-form');
+  changeBackground();
 }
-btnSubmit.addEventListener('click', createDiv);
+btnSubmit.addEventListener('click', restoreData);
+
+function changeBackground() {
+  const main = document.getElementById('main-container');
+  main.style.backgroundImage = 'url(/images/hp.jpg)';
+  //main.style.backgroundColor = 'black';
+}

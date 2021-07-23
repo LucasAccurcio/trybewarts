@@ -1,14 +1,24 @@
+@font-face {
+  font-family: harryp__;
+  src: url(fonteHP/HP.TTF);
+}
+
 .header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: rgb(50, 167, 145);
   color: white;
   height: 60px;
 }
 
+h1 {
+  font-family: harryp__;
+  font-size: 2.5em;
+}
+
 .trybewarts-header-logo {
-  height: 40px;
+  height: 50px;
 }
 
 .trybewarts-login {
@@ -16,35 +26,89 @@
   justify-content: flex-end;
 }
 
-main {
+#enter-button {
+  background-color: rgb(71, 17, 71);
+  border-radius: 8px;
+  border: 0px;
+  color: white;
+  font-weight: bold;
+  width: 60px;
+  padding: 4px;
+}
+
+#submit-btn:enabled {
+  background-color: rgb(3, 104, 28);
+  border-radius: 8px;
+  border: 0px;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  padding: 8px 0px;
+}
+
+#submit-btn:disabled {
+  background-color: rgb(139, 139, 139);
+  border-radius: 8px;
+  border: 0px;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  padding: 8px 0px;
+}
+
+#main-container {
   display: flex;
+  background-color: rgb(216, 215, 215);
+  /* background-image: url(/images/hp.jpg); */
+  background-size: 100%;
 }
 
 #evaluation-form {
   display: flex;
-  flex-flow: nowrap;
-  flex-direction: column;
-  width: 675px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 575px;
+  margin-left: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+}
+
+#evaluation-form h2 {
+  font-size: larger;
+  font-weight: bolder;
+  width: 100%;
+  text-align: center;
+
 }
 
 #trybewarts-forms-logo {
   height: 500px;
 }
 
-#input-name {
-  width: 40%;
+input[type='text'] {
+  width: 45%;
+  height: 22px;
+  border: solid 1px rgb(255, 255, 255);
+  border-radius: 5px;
+  margin-right: 3px;
 }
 
-#input-lastname {
-  width: 40%;
-}
-
-#input-email {
-  width: 40%;
+input[type='email'] {
+  width: 45%;
+  height: 22px;
+  border: solid 1px rgb(255, 255, 255);
+  border-radius: 5px;
+  margin-right: 3px;
 }
 
 #house {
-  width: 34%;
+  width: 40%;
+  height: 25px;
+  background-color: white;
+  border: solid 0px rgb(255, 255, 255);
+  border-radius: 5px;
+  margin-right: 2px;
 }
 
 .input-form {
@@ -52,6 +116,7 @@ main {
   flex-flow: row wrap;
   justify-content: center;
   margin: 5px;
+  border: solid black 1px;
 }
 
 .input-form2 {
@@ -71,7 +136,8 @@ main {
 .classe-radio {
   display: flex;
   flex-flow: column wrap;
-  width: 40%;
+  width: 42%;
+  margin-left: 2px;
 }
 
 .classe-check-box {
@@ -83,7 +149,30 @@ main {
 .classe-avaliacao {
   display: flex;
   flex-wrap: nowrap;
-  font-size: x-small;
+}
+
+#evaluation-form .textarea {
+  width: 100%;
+}
+
+#evaluation-form #textarea {
+  width: 100%;
+  height: 75px;
+  background-color: white;
+  border: solid 0px rgb(255, 255, 255);
+  border-radius: 5px;
+  margin-right: 2px;
+  resize: none;
+}
+
+#evaluation-form #label-infos {
+  width: 100%;
+}
+
+p {
+  width: 100%;
+  font-size: small;
+  margin-top: 0%;
 }
 
 footer {
@@ -91,4 +180,21 @@ footer {
   justify-content: center;
   background-color: dimgray;
   color: white;
+}
+
+hr {
+  border: solid 1px rgb(144, 145, 145);
+  margin: 2px;
+  width: 100%;
+  text-align: center;
+}
+
+.novo-form {
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  opacity: 60%;
+  height: 200px;
+  margin: 0px 130px;
+  align-self: center;
 }

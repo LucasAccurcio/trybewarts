@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trybewarts</title>
+    <!-- CSS only -->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -13,27 +14,24 @@
         <h1 id="trybewarts-header-title">Trybewarts</h1>
         <form class ="trybewarts-login">
             <input type="text" placeholder="Login" id="input-login">
-            <input type="" placeholder="Senha" id="input-senha">
+            <input type="text" placeholder="Senha" id="input-senha">
             <button type="submit" id="enter-button">Login</button>
         </form>
     </header>
-    <main>
+    <main id="main-container"> 
         <form id="evaluation-form" method="GET">
-            <div class="input-form">
-                <input type="text" name="" placeholder="Nome" id="input-name">
-                <input type="text" name="" placeholder="Sobrenome" id="input-lastname">
-            </div>
-            <div class="input-form2">
-                <input type="email" name="" placeholder="Email" id="input-email">
-                <label for="house" >Casa:</label>
-                <select id="house">
-                    <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-                    <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-                    <option value="Corvinode" id="corvinode-house">Corvinode</option>
-                    <option value="Pytherina" id="pytherina-house">Pytherina</option>
-                </select>
-            </div>
-            <div class="container-radio-checkbox">
+            <h2>Forms</h2>
+            <input type="text" name="" placeholder="Nome" id="input-name">
+            <input type="text" name="" placeholder="Sobrenome" id="input-lastname">
+            <input type="email" name="" placeholder="Email" id="input-email">
+            <label for="house" >Casa:</label>
+            <select id="house">
+                <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                <option value="Pytherina" id="pytherina-house">Pytherina</option>
+            </select>
+            <hr>
                 <div class="classe-radio">
                     <label id="label-family">Qual sua família?</label>
                     <label for ="frontend"><input type="radio" name="family" value="Frontend" id="frontend">Familia Frontend</label>
@@ -50,6 +48,7 @@
                     <label for="Python"><input id="Python" name="conteudo" type="checkbox" class="subject" value="Python">Python</label>
                 </div>
             </div>
+            <hr>
             <div class="classe-avaliacao">
                 <label id="label-rate">Como você avalia a Trybewarts?</label>
                 <label for="1"><input type="radio" name="rate" value="1" id="1">1</label>
