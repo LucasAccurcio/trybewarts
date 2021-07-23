@@ -53,7 +53,7 @@ function createDiv() {
   const inputFamily = document.querySelector('input[name="family"]:checked').value;
   const inputCheckbox = document.querySelectorAll('input[name="conteudo"]:checked');
   const conteudos = [];
-  for (let conteudo of inputCheckbox) {
+  for (const conteudo of inputCheckbox) {
     conteudos.push(` ${conteudo.value}`);
   }
   const rating = document.querySelector('input[name="rate"]:checked').value;
