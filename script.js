@@ -26,7 +26,6 @@ function stateHandle() {
     btnSubmit.disabled = false;
     getCheckbox.value = '';
   }
-  console.log(getCheckbox.value);
 }
 getCheckbox.addEventListener('change', stateHandle);
 
@@ -53,9 +52,9 @@ function createDiv() {
   const inputFamily = document.querySelector('input[name="family"]:checked').value;
   const inputCheckbox = document.querySelectorAll('input[name="conteudo"]:checked');
   const conteudos = [];
-  for (const conteudo of inputCheckbox) {
-    conteudos.push(` ${conteudo.value}`);
-  }
+  inputCheckbox.forEach((element) => {
+    conteudos.push(` ${element.value}`);
+  });
   const rating = document.querySelector('input[name="rate"]:checked').value;
   const note = document.getElementById('textarea').value;
   tagForm.innerHTML = document.createElement('div');
