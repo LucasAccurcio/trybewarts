@@ -2,9 +2,13 @@
 # Projeto Trybewarts
 
 ## Contexto
-Este é um projeto desenvolvido quando estava cursando a [Trybe](http://www.betrybe.com) 
+Este é um projeto desenvolvido quando estava cursando a [Trybe](http://www.betrybe.com). 
+
+Projeto realizado em dupla com [Cézar Montenegro](https://github.com/CezarMontenegro).
+
 Trata-se de um site desenvolvido em HTML, CSS e JavaScript.
-Neste projeto, você desenvolvemos uma página de formulário da Escola de Magia de Trybewarts, em que as pessoas estudantes podem enviar seus feedbacks sobre a escola. 
+
+Neste projeto, desenvolvemos uma página de formulário da Escola de Magia de Trybewarts, em que as pessoas estudantes podem enviar seus feedbacks sobre a escola. 
 
 ### Apresentação do Projeto Finalizado
 ![Apresentação](trybewarts.gif)
